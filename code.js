@@ -16,6 +16,9 @@ function binarySearch(list, element) {
         else if (element > list[listMid]) {
             listStart = listMid + 1;
         }
+        else { 
+            return -1;
+        }
     }
     return -1;
 }
