@@ -9,7 +9,7 @@ function binarySearch(list, element) {
             return listMid;
         }
         // element smaller than mid, adjust search to smaller half of list
-        if (element < list[listMid]) {
+        else if (element < list[listMid]) {
             listEnd = listMid - 1;
         }
         // element larger than mid, adjust search to larger half of list
