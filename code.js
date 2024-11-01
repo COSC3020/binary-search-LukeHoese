@@ -1,9 +1,9 @@
 function binarySearch(list, element) {
     var listStart = 0;
-    var listEnd = Math.floor(list.length - 1);
+    var listEnd = (list.length - 1);
 
     while (listStart <= listEnd) {
-        var listMid = ((listStart + listEnd) / 2);
+        var listMid = Math.floor((listStart + listEnd) / 2);
         // element found, return index
         if (list[listMid] === element) {
             return listMid;
