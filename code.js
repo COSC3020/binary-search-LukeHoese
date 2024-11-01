@@ -6,6 +6,7 @@ function binarySearch(list, element) {
         var listMid = Math.floor((listStart + listEnd) / 2);
         // element found, return index
         if (list[listMid] === element) {
+            // This line fixed things but I get the feeling it is a bit of a "bandaid on a bullet hole", What was the real problem and what is a proper solution?
             if (list[0] === list[listMid]) {
                 return 0;
             }
