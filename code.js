@@ -3,7 +3,7 @@ function binarySearch(list, element) {
     var listEnd = (list.length - 1);
 
     while (listStart <= listEnd) {
-        var listMid = Math.ceiling((listStart + listEnd) / 2);
+        var listMid = Math.ceil((listStart + listEnd) / 2);
         // element found, return index
         if (list[listMid] === element) {
             return listMid;
