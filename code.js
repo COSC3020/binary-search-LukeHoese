@@ -17,4 +17,5 @@ function binarySearch(list, element) {
             listStart = mid + 1;
         }
     return -1;
+    }
 }
