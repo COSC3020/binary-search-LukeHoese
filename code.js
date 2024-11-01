@@ -1,6 +1,6 @@
 function binarySearch(list, element) {
     var listStart = 0;
-    var listEnd = (list.length - 1);
+    var listEnd = Math.floor(list.length - 1);
 
     while (listStart <= listEnd) {
         var listMid = ((listStart + listEnd) / 2);
