@@ -6,6 +6,9 @@ function binarySearch(list, element) {
         var listMid = Math.floor((listStart + listEnd) / 2);
         // element found, return index
         if (list[listMid] === element) {
+            if (list[0] === list[mid]) {
+                return 0;
+            }
             return listMid;
         }
         // element smaller than mid, adjust search to smaller half of list
