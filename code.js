@@ -13,7 +13,7 @@ function binarySearch(list, element) {
             listEnd = listMid - 1;
         }
         // element larger than mid, adjust search to larger half of list
-        else {
+        else if (element > list[listMid]) {
             listStart = listMid + 1;
         }
     }
