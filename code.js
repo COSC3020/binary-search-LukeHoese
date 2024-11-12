@@ -5,7 +5,7 @@ function binarySearch(list, element) {
 
     while (listStart <= listEnd) {
         var listMid = Math.floor((listStart + listEnd) / 2);
-        // element found, return index
+        // element found, set new lowest index
         if (list[listMid] === element) {
             lowestIndex = listMid;
         }
